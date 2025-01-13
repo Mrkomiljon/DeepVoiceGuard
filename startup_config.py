@@ -14,11 +14,6 @@ import importlib
 import random
 import numpy as np
 
-__author__ = "Xin Wang"
-__email__ = "wangxin@nii.ac.jp"
-__copyright__ = "Copyright 2020, Xin Wang"
-
-
 def set_random_seed(random_seed, args=None):
     """ set_random_seed(random_seed, args=None)
     
