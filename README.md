@@ -78,9 +78,9 @@ For more details, visit the [ASVspoof 2019 official website](https://www.asvspoo
 - **Epochs**: 50
 
 ### Training Script
-The training process is handled using `train_RawNet2.py`. Run the following command to train the model:
+The training process is handled using `main.py`. Run the following command to train the model:
 ```bash
-python train_RawNet2.py --data_path ./data --epochs 50 --batch_size 32
+python main.py --data_path LA --epochs 100 --batch_size 32
 ```
 ### Run TensorBoard
 - Run TensorBoard to visualize logs:
