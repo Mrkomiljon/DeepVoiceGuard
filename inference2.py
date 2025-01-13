@@ -73,8 +73,8 @@ def predict_with_sliding_window(audio_path, model, device, window_size=64600, st
 # Main script for inference
 if __name__ == "__main__":
     # Model configuration
-    model_config_path = 'C:\\Users\\GOOD\\Desktop\\TEST-2024\\2021\\LA\\Baseline-RawNet2\\model_config_RawNet.yaml'
-    model_path = 'C:\\Users\\GOOD\\Desktop\\TEST-2024\\2021\\LA\\Baseline-RawNet2\\checkpoints\\best_model.pth'
+    model_config_path = 'your\\path\\to\\model_config_RawNet.yaml'
+    model_path = 'your\\path\\to\\checkpoints\\best_model.pth'
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
     # Load the model
@@ -82,7 +82,7 @@ if __name__ == "__main__":
 
     # Specify the path to the audio file
     # audio_path = "C:\\Users\\GOOD\\Desktop\\TEST-2024\\2021\\LA\\Baseline-RawNet2\\audio\\KTA.mp3"  # Example .mp3 file
-    audio_path = "C:\\Users\\GOOD\\Desktop\\TEST-2024\\RawNet2\\data\\real\\7.wav"
+    audio_path = "your\\path\\to\\data\\real\\7.wav"
 
     # Perform sliding window prediction
     result, avg_probability = predict_with_sliding_window(audio_path, model, device)
