@@ -178,7 +178,7 @@ The ONNX model was deployed using **FastAPI** for real-time inference. The FastA
 
 - **POST** `/predict/`
   - Input: Audio file (WAV format, 16 kHz, mono).
-  - Output: JSON with prediction result (`Genuine` or `Spoofed`).
+  - Output: JSON with prediction result (`Real` or `Fake`).
 
 ---
 
