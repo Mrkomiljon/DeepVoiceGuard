@@ -68,7 +68,7 @@ The training process is handled using `train_RawNet2.py`. Run the following comm
 ```bash
 python train_RawNet2.py --data_path ./data --epochs 50 --batch_size 32
 ```
-- --> Run TensorBoard
+### Run TensorBoard
 - Run TensorBoard to visualize logs:
 
 ```bash
