@@ -37,15 +37,15 @@ def export_to_onnx(model, onnx_path, device):
 
 if __name__ == "__main__":
     # Paths to model configuration and checkpoint
-    model_config_path = 'C:\\Users\\GOOD\\Desktop\\TEST-2024\\2021\\LA\\Baseline-RawNet2\\model_config_RawNet.yaml'
-    model_path = 'C:\\Users\\GOOD\\Desktop\\TEST-2024\\2021\\LA\\Baseline-RawNet2\\checkpoints\\best_model.pth'
+    model_config_path = 'your\\path\\to\\model_config_RawNet.yaml'
+    model_path = 'your\\path\\to\\checkpoints\\best_model.pth'
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
     # Load the model
     model = load_model(model_config_path, model_path, device)
 
     # Path to save the ONNX model
-    onnx_path = 'C:\\Users\\GOOD\\Desktop\\TEST-2024\\2021\\LA\\Baseline-RawNet2\\checkpoints\\RawNet_model.onnx'
+    onnx_path = 'your\\path\\to\\checkpoints\\RawNet_model.onnx'
 
     # Export the model to ONNX
     export_to_onnx(model, onnx_path, device)
