@@ -62,8 +62,8 @@ def predict_real_or_fake_with_probability(audio_path, model, device):
 # Main script for inference
 if __name__ == "__main__":
     # Model configuration
-    model_config_path = 'C:/Users/GOOD/Desktop/TEST-2024/2021/LA/Baseline-RawNet2/model_config_RawNet.yaml'
-    model_path = 'C:\\Users\\GOOD\\Desktop\\TEST-2024\\2021\\LA\\Baseline-RawNet2\\checkpoints\\best_model.pth'
+    model_config_path = 'your\\path\\to\\model_config_RawNet.yaml'
+    model_path = 'your\\path\\to\\checkpoints\\best_model.pth'
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
     # Load the model
@@ -72,7 +72,7 @@ if __name__ == "__main__":
     # Specify the path to the audio file
     # audio_path = 'C:/Users/GOOD/Desktop/TEST-2024/2021/LA/Baseline-RawNet2/LA/ASVspoof2019_LA_eval/flac/LA_E_9094036.flac'
     # audio_path = "D:\\audio_data_asv\\ASVspoof2021_LA_eval\\flac\\LA_E_9999987.flac"
-    audio_path = "C:\\Users\\GOOD\\Desktop\\TEST-2024\\2021\\LA\\Baseline-RawNet2\\audio\\NaraA.mp3"
+    audio_path = "your\\path\\to\\audio\\NaraA.mp3"
     # Perform prediction
     result, probability = predict_real_or_fake_with_probability(audio_path, model, device)
 
