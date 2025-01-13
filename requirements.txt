@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+onnxruntime
+librosa
+torch
+numpy
