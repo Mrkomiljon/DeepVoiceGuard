@@ -53,9 +53,9 @@ def train_epoch(train_loader, model, optimizer, criterion, device):
 if __name__ == '__main__':
     # Argument parsing
     parser = argparse.ArgumentParser(description='ASVspoof2021 baseline system')
-    parser.add_argument('--database_path', type=str, default='C:/Users/GOOD/Desktop/TEST-2024/2021/LA/Baseline-RawNet2/LA', help='Path to the LA database.')
-    parser.add_argument('--protocols_path', type=str, default='C:/Users/GOOD/Desktop/TEST-2024/2021/LA/Baseline-RawNet2/LA/ASVspoof2019_LA_cm_protocols', help='Path to the protocol files.')
-    parser.add_argument('--model_config_path', type=str, default='C:/Users/GOOD/Desktop/TEST-2024/2021/LA/Baseline-RawNet2/model_config_RawNet.yaml', help='Path to the model configuration YAML file.')
+    parser.add_argument('--database_path', type=str, default='your\\path\\to\\LA', help='Path to the LA database.')
+    parser.add_argument('--protocols_path', type=str, default='your\\path\\to\\LA\\ASVspoof2019_LA_cm_protocols', help='Path to the protocol files.')
+    parser.add_argument('--model_config_path', type=str, default='your\\path\\to\\LA\\model_config_RawNet.yaml', help='Path to the model configuration YAML file.')
     parser.add_argument('--batch_size', type=int, default=32, help='Batch size for training.')
     parser.add_argument('--num_epochs', type=int, default=100, help='Number of epochs to train.')
     parser.add_argument('--lr', type=float, default=0.0001, help='Learning rate.')
@@ -129,7 +129,7 @@ if __name__ == '__main__':
 
         if val_acc > best_acc:
             best_acc = val_acc
-            torch.save(model.state_dict(), 'C:\\Users\\GOOD\\Desktop\\TEST-2024\\2021\\LA\\Baseline-RawNet2\\checkpoints\\best_model1.pth')
+            torch.save(model.state_dict(), 'your\\path\\to\\checkpoints\\best_model1.pth')
             print(f'Best model saved with accuracy: {best_acc:.2f}%')
 
     writer.close()
