@@ -16,8 +16,8 @@ import webbrowser
 app = FastAPI()
 
 # Load the model
-model_config_path = 'C:\\\\Users\\\\GOOD\\\\Desktop\\\\TEST-2024\\\\2021\\\\LA\\\\Baseline-RawNet2\\\\model_config_RawNet.yaml'
-model_path = 'C:\\\\Users\\\\GOOD\\\\Desktop\\\\TEST-2024\\\\2021\\\\LA\\\\Baseline-RawNet2\\\\checkpoints\\\\best_model.pth'
+model_config_path = 'your\\path\\to\\model_config_RawNet.yaml'
+model_path = 'your\\path\\to\\checkpoints\\best_model.pth'
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
 with open(model_config_path, 'r') as f:
