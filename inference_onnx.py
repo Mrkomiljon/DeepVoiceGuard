@@ -61,10 +61,10 @@ def predict_with_sliding_window(audio_path, onnx_model_path, window_size=64600, 
 # Main script for inference
 if __name__ == "__main__":
     # Path to the ONNX model
-    onnx_model_path = 'C:\\Users\\GOOD\\Desktop\\TEST-2024\\2021\\LA\\Baseline-RawNet2\\checkpoints\\RawNet_model.onnx'
+    onnx_model_path = 'your\\path\\to\\checkpoints\\RawNet_model.onnx'
 
     # Specify the path to the audio file
-    audio_path = "C:\\Users\\GOOD\\Desktop\\TEST-2024\\2021\\LA\\Baseline-RawNet2\\audio\\R.mp3"  # Example .mp3 file
+    audio_path = "your\\path\\to\\audio\\R.mp3"  # Example .mp3 file
 
     # Perform sliding window prediction
     result, avg_probability = predict_with_sliding_window(audio_path, onnx_model_path)
