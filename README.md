@@ -117,13 +117,13 @@ The project includes a **sliding window inference method** to process long audio
 - Computes average confidence probabilities.
 
 ### Script
-The `predict_with_sliding_window` function in `sliding_window_inference.py` handles the inference.
+The `predict_with_sliding_window` function in `inference_onnx.py` handles the inference.
 
 ### Example Usage
 Here is how you can perform inference with the ONNX model and a sliding window:
 
 ```python
-python sliding_window_inference.py --model_path <path_to_model.onnx> --audio_path <path_to_audio_file>
+python inference_onnx.py --model_path <path_to_model.onnx> --audio_path <path_to_audio_file>
 ```
 
 ### Sample Output
