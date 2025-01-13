@@ -21,6 +21,12 @@
 10. [References](#references)
 
 ---
+## Demo on Hugging Face Spaces
+
+Test the DeepVoiceGuard model directly on Hugging Face Spaces by clicking the logo below:
+
+[![Hugging Face Spaces](https://raw.githubusercontent.com/huggingface/huggingface_hub/main/widgets/src/assets/huggingface_logo.svg)](https://huggingface.co/spaces/Mrkomiljon/DeepVoiceGuard)
+
 
 ## Introduction
 
