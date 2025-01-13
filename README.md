@@ -1,5 +1,13 @@
 # DeepVoiceGuard
 # DeepVoiceGuard: Anti-Spoofing for ASV Systems
+## Available on Hugging Face 🤗
+
+This model is also hosted on Hugging Face for easy access and inference:
+
+[![Hugging Face](https://img.shields.io/badge/🤗-Hugging%20Face-blue?logo=huggingface)](https://huggingface.co/spaces/Mrkomiljon/DeepVoiceGuard)
+
+If you find this project helpful or inspiring, please consider giving it a star 🌟 on GitHub!
+
 ![cc](https://github.com/user-attachments/assets/4d244897-363d-4643-a6f8-b21e1a7c1650)
 
 
