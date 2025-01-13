@@ -1,5 +1,7 @@
 # DeepVoiceGuard
 # DeepVoiceGuard: Anti-Spoofing for ASV Systems
+![cc](https://github.com/user-attachments/assets/4d244897-363d-4643-a6f8-b21e1a7c1650)
+
 
 **DeepVoiceGuard** is a robust solution for detecting spoofed audio in Automatic Speaker Verification (ASV) systems. This project utilizes the **RawNet2** model, trained on the **ASVspoof 2019** dataset, and deploys the trained model using **FastAPI** for real-time inference. The repository also includes ONNX model conversion and sliding window inference for efficient processing of long audio files.
 
